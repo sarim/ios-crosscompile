@@ -1,0 +1,3 @@
+http://www.php.net/get/php-5.5.1.tar.bz2/from/this/mirror
+http://svn.telesphoreo.org/trunk/data/_libxml2/libxml2-2.6.32.tar.gz
+https://github.com/zend-dev/ZendOptimizerPlus/archive/v7.0.2.tar.gz

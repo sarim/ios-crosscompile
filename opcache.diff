@@ -1,0 +1,25 @@
+diff --git a/configure b/configure
+index 7e26d32..071be62 100755
+--- a/configure
++++ b/configure
+@@ -4512,7 +4512,7 @@ $as_echo "$msg" >&6; }
+ 
+   { $as_echo "$as_me:${as_lineno-$LINENO}: checking for known struct flock definition" >&5
+ $as_echo_n "checking for known struct flock definition... " >&6; }
+-    if test "$cross_compiling" = yes; then :
++    if test "$cross_compiling" = no; then :
+   { { $as_echo "$as_me:${as_lineno-$LINENO}: error: in \`$ac_pwd':" >&5
+ $as_echo "$as_me: error: in \`$ac_pwd':" >&2;}
+ as_fn_error $? "cannot run test program while cross compiling
+@@ -4551,11 +4551,7 @@ extern int lock_file;
+ int main() { return 0; }
+ 
+ _ACEOF
+-if ac_fn_c_try_run "$LINENO"; then :
+ 
+-else
+-  as_fn_error $? "Don't know how to define struct flock on this system, set --enable-opcache=no" "$LINENO" 5
+-fi
+ rm -f core *.core core.conftest.* gmon.out bb.out conftest$ac_exeext \
+   conftest.$ac_objext conftest.beam conftest.$ac_ext
+ fi
